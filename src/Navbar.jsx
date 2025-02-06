@@ -6,7 +6,7 @@ export default function Navbar() {
     
     <nav className="navbar navbar-expand-lg sticky-top">
   <div className="container">
-    <Link className="navbar-brand text-white fw-bold fs-1" to={'/'}>START BOOTSTRAP</Link>
+    <Link className="navbar-brand text-white fw-bold fs-1" to={'/'} >START BOOTSTRAP</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>
