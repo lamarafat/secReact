@@ -1,3 +1,5 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css'
 import Navbar from './Navbar'
 import Header from './Header'
@@ -16,7 +18,6 @@ function App() {
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
    </>
