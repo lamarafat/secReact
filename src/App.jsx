@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import './App.css'
 import Navbar from './Navbar'
 import Header from './Header'
@@ -13,10 +11,13 @@ function App() {
   return (
     <>
     <Navbar />
-    <Header />
-    <Portfolio />
-    <About />
-    <Contact />
+    <Routes>
+      <Route path="/" element={<Header />} />
+      <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
     <Footer />
    </>
   )
